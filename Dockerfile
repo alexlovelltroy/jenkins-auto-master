@@ -1,7 +1,7 @@
 FROM jenkins:2.7.2
 
 USER root
-RUN apt-get update && apt-get install -y apt-utils && apt-get install -y sloccount cloc wget git docker
+RUN apt-get update && apt-get install -y apt-utils && apt-get install -y sloccount cloc wget git docker.io
 ADD ./wrapdocker /usr/local/bin/wrapdocker
 RUN chmod +x /usr/local/bin/wrapdocker
 VOLUME /var/lib/docker

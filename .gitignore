@@ -11,6 +11,7 @@ jenkins_home/jobs/
 jenkins_home/logs/
 jenkins_home/nodeMonitors.xml
 jenkins_home/org.jenkinsci.plugins.workflow.flow.FlowExecutionList.xml
+jenkins_home/org.jenkinsci.plugins.workflow.support.steps.StageStep.xml
 jenkins_home/plugins/
 jenkins_home/queue.xml
 jenkins_home/queue.xml.bak
