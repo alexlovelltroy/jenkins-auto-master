@@ -1,4 +1,4 @@
-FROM jenkins
+FROM jenkins:2.7.2
 
 USER root
 RUN apt-get update && apt-get install -y apt-utils && apt-get install -y sloccount cloc docker git
