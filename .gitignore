@@ -1,0 +1,9 @@
+jenkins_home/.java
+jenkins_home/copy_reference_file.log
+jenkins_home/failed-boot-attempts.txt
+jenkins_home/init.groovy.d/
+jenkins_home/plugins/
+jenkins_home/queue.xml
+jenkins_home/secret.key
+jenkins_home/secret.key.not-so-secret
+jenkins_home/war/
