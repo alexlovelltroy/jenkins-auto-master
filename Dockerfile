@@ -29,16 +29,3 @@ workflow-cps \
 workflow-scm-step \
 workflow-step-api \
 workflow-support
-
-
-# User Specific
-RUN /usr/local/bin/install-plugins.sh docker \
-docker-build-step \
-docker-workflow \
-github \
-github-api \
-gogs-webhook \
-hue-light \
-packer \
-postbuildscript \
-sloccount
