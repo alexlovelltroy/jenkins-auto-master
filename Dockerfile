@@ -1,7 +1,10 @@
 FROM jenkins:2.7.2
 
 USER root
-RUN apt-get update && apt-get install -y apt-utils && apt-get install -y sloccount cloc docker git
+RUN apt-get update && apt-get install -y apt-utils && apt-get install -y sloccount cloc wget git docker
+ADD ./wrapdocker /usr/local/bin/wrapdocker
+RUN chmod +x /usr/local/bin/wrapdocker
+VOLUME /var/lib/docker
 USER jenkins
 
 # Base
@@ -37,3 +40,6 @@ docker-workflow \
 github \
 github-api \
 postbuildscript
+
+# Make sure we exec to pass on signals correctly
+CMD wrapdocker && exec java -jar /usr/share/jenkins/jenkins.war

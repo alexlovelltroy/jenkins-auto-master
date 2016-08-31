@@ -7,8 +7,10 @@ jenkins_home/hudson.plugins.git.GitTool.xml
 jenkins_home/identity.key.enc
 jenkins_home/init.groovy.d/
 jenkins_home/jenkins.install.InstallUtil.lastExecVersion
+jenkins_home/jobs/
 jenkins_home/logs/
 jenkins_home/nodeMonitors.xml
+jenkins_home/org.jenkinsci.plugins.workflow.flow.FlowExecutionList.xml
 jenkins_home/plugins/
 jenkins_home/queue.xml
 jenkins_home/queue.xml.bak
@@ -18,3 +20,4 @@ jenkins_home/secrets/
 jenkins_home/updates/
 jenkins_home/userContent/
 jenkins_home/war/
+jenkins_home/workspace/
