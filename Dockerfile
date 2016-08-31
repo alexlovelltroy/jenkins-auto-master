@@ -12,7 +12,6 @@ docker-commons \
 durable-task \
 git \
 git-client \
-github-api \
 icon-shim \
 javadoc \
 mailer \
@@ -37,6 +36,7 @@ RUN /usr/local/bin/install-plugins.sh docker \
 docker-build-step \
 docker-workflow \
 github \
+github-api \
 gogs-webhook \
 hue-light \
 packer \
