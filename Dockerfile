@@ -8,7 +8,6 @@ USER jenkins
 RUN /usr/local/bin/install-plugins.sh ace-editor \
 authentication-tokens \
 credentials \
-docker-commons \
 durable-task \
 git \
 git-client \
@@ -29,3 +28,12 @@ workflow-cps \
 workflow-scm-step \
 workflow-step-api \
 workflow-support
+
+# User Specific
+RUN /usr/local/bin/install-plugins.sh docker \
+docker-build-step \
+docker-commons \
+docker-workflow \
+github \
+github-api \
+postbuildscript
